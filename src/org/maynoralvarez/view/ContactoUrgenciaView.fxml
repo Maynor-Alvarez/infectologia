@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.maynoralvarez.controller.ContactoUrgenciaController">
+   <children>
+      <Label layoutX="221.0" layoutY="14.0" text="Contacto Urgencia">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="63.0" text="Codigo Contacto Urgencia">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#04ff00" />
+         </effect>
+      </Label>
+      <Label layoutX="27.0" layoutY="98.0" text="Nombres">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#04ff00" />
+         </effect>
+      </Label>
+      <Label layoutX="27.0" layoutY="135.0" text="Apellidos">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#04ff00" />
+         </effect>
+      </Label>
+      <Label layoutX="347.0" layoutY="98.0" text="Numero Contacto">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#04ff00" />
+         </effect>
+      </Label>
+      <Label layoutX="347.0" layoutY="135.0" text="Codigo Paciente">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#04ff00" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbCodigoContactoUrgencia" layoutX="187.0" layoutY="60.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbCodigoPaciente" layoutX="467.0" layoutY="132.0" prefWidth="150.0" />
+      <TextField fx:id="txtNombres" editable="false" layoutX="188.0" layoutY="95.0" />
+      <TextField fx:id="txtApellidos" editable="false" layoutX="188.0" layoutY="132.0" />
+      <TextField fx:id="txtNumeroContacto" editable="false" layoutX="468.0" layoutY="95.0" />
+      <TableView fx:id="tblContactoUrgencia" layoutY="170.0" prefHeight="200.0" prefWidth="650.0">
+        <columns>
+          <TableColumn fx:id="colCodigoContacto" prefWidth="114.0" text="Codigo Contacto" />
+          <TableColumn fx:id="colNombres" prefWidth="153.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" minWidth="0.0" prefWidth="126.0" text="Apellidos" />
+            <TableColumn fx:id="colNumeroContacto" prefWidth="129.0" text="Numero Contacto" />
+            <TableColumn fx:id="colCodigoPaciente" prefWidth="127.0" text="CodigoPaciente" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="28.0" layoutY="390.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+         <effect>
+            <InnerShadow color="#04ff00" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="187.0" layoutY="390.0" mnemonicParsing="false" text="Eliminar">
+         <effect>
+            <InnerShadow color="#04ff00" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="409.0" layoutY="390.0" mnemonicParsing="false" text="Editar">
+         <effect>
+            <InnerShadow color="#04ff00" />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="569.0" layoutY="390.0" mnemonicParsing="false" text="Reporte">
+         <effect>
+            <InnerShadow color="#04ff00" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="73.0" fitWidth="86.0" layoutX="526.0" layoutY="13.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ContactoUrgencia.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.maynoralvarez.controller.MedicosController">
+   <children>
+      <ComboBox fx:id="cmbCodigoMedico" layoutX="103.0" layoutY="14.0" prefHeight="25.0" prefWidth="184.0" />
+      <Label layoutX="14.0" layoutY="12.0" prefHeight="31.0" prefWidth="89.0" text="Codigo Medico">
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+      </Label>
+      <Label layoutX="327.0" layoutY="11.0" prefHeight="31.0" prefWidth="62.0" text="Licencia">
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtLicenciaMedica" editable="false" layoutX="414.0" layoutY="14.0" promptText="LicenciaMedica" />
+      <Label layoutX="14.0" layoutY="59.0" prefHeight="31.0" prefWidth="79.0" text="Nombres">
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+      </Label>
+      <Label layoutX="14.0" layoutY="101.0" prefHeight="31.0" prefWidth="79.0" text="Apellidos">
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtNombres" editable="false" layoutX="103.0" layoutY="62.0" prefHeight="25.0" prefWidth="184.0" promptText="Nombres" />
+      <TextField fx:id="txtApellidos" editable="false" layoutX="103.0" layoutY="104.0" prefHeight="25.0" prefWidth="184.0" promptText="Apellidos" />
+      <Label layoutX="327.0" layoutY="56.0" prefHeight="31.0" prefWidth="79.0" text="Hora Entrada">
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+      </Label>
+      <Label layoutX="327.0" layoutY="101.0" prefHeight="31.0" prefWidth="79.0" text="Hora Salida">
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+      </Label>
+      <Label layoutX="14.0" layoutY="146.0" prefHeight="31.0" prefWidth="79.0" text="Sexo">
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtSexo" editable="false" layoutX="103.0" layoutY="149.0" prefHeight="25.0" prefWidth="184.0" promptText="Sexo" />
+      <TableView fx:id="tblMedicos" layoutY="195.0" prefHeight="290.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="colCodigoMedico" prefWidth="97.0" text="Codigo Medico" />
+          <TableColumn fx:id="colLicenciaMedica" prefWidth="112.0" text="Licencia Medica" />
+            <TableColumn fx:id="colNombres" prefWidth="134.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" minWidth="0.0" prefWidth="120.0" text="Apellidos" />
+            <TableColumn fx:id="colHoraEntrada" prefWidth="114.0" text="Hora Entrada" />
+            <TableColumn fx:id="colHoraSalida" prefWidth="90.0" text="Hora Salida" />
+            <TableColumn fx:id="colSexo" minWidth="0.0" prefWidth="120.0" text="Sexo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="67.0" layoutY="503.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+         <effect>
+            <InnerShadow color="RED" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="268.0" layoutY="503.0" mnemonicParsing="false" text="Eliminar">
+         <effect>
+            <InnerShadow color="RED" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="469.0" layoutY="503.0" mnemonicParsing="false" text="Editar">
+         <effect>
+            <InnerShadow color="RED" />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="633.0" layoutY="503.0" mnemonicParsing="false" text="Reporte">
+         <effect>
+            <InnerShadow color="RED" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="146.0" fitWidth="124.0" layoutX="615.0" layoutY="17.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Medico.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="327.0" layoutY="113.0" prefHeight="98.0" prefWidth="276.0" text="Medicos">
+         <font>
+            <Font name="Berlin Sans FB" size="64.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHoraEntrada" editable="false" layoutX="414.0" layoutY="59.0" promptText="Hora Entrada" />
+      <TextField fx:id="txtHoraSalida" editable="false" layoutX="414.0" layoutY="104.0" promptText="Hora Salida" />
+   </children>
+</AnchorPane>

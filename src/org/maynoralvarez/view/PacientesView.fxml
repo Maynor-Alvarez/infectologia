@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.maynoralvarez.controller.PacientesController">
+   <children>
+      <Label layoutX="31.0" layoutY="83.0" prefHeight="24.0" prefWidth="65.0" text="DPI">
+         <effect>
+            <DropShadow color="#0400ff" />
+         </effect></Label>
+      <Label layoutX="257.0" prefHeight="87.0" prefWidth="280.0" text="Pacientes">
+         <font>
+            <Font name="Berlin Sans FB" size="64.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDPI" editable="false" layoutX="96.0" layoutY="82.0" prefHeight="25.0" prefWidth="255.0" />
+      <Label layoutX="31.0" layoutY="123.0" prefHeight="24.0" prefWidth="65.0" text="Nombres">
+         <effect>
+            <DropShadow color="#1a00ff" />
+         </effect></Label>
+      <Label layoutX="374.0" layoutY="82.0" prefHeight="24.0" prefWidth="65.0" text="Apellidos">
+         <effect>
+            <DropShadow color="#1500ff" />
+         </effect></Label>
+      <TextField fx:id="txtNombres" editable="false" layoutX="96.0" layoutY="123.0" prefHeight="25.0" prefWidth="255.0" />
+      <TextField fx:id="txtApellidos" editable="false" layoutX="472.0" layoutY="82.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label layoutX="372.0" layoutY="123.0" prefHeight="24.0" prefWidth="106.0" text="Fecha Nacimiento">
+         <effect>
+            <DropShadow color="#000dff" />
+         </effect></Label>
+      <Label layoutX="31.0" layoutY="163.0" prefHeight="24.0" prefWidth="47.0" text="Edad">
+         <effect>
+            <DropShadow color="#0400ff" />
+         </effect></Label>
+      <TextField fx:id="txtEdad" editable="false" layoutX="96.0" layoutY="163.0" prefHeight="25.0" prefWidth="255.0" />
+      <Label layoutX="374.0" layoutY="205.0" prefHeight="24.0" prefWidth="47.0" text="Sexo">
+         <effect>
+            <DropShadow color="#0d00ff" />
+         </effect></Label>
+      <TextField fx:id="txtSexo" editable="false" layoutX="421.0" layoutY="205.0" prefHeight="25.0" prefWidth="270.0" />
+      <Label layoutX="374.0" layoutY="163.0" prefHeight="24.0" prefWidth="65.0" text="Direccion">
+         <effect>
+            <DropShadow color="#0d00ff" />
+         </effect></Label>
+      <TextField fx:id="txtDireccion" editable="false" layoutX="472.0" layoutY="163.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label layoutX="33.0" layoutY="205.0" prefHeight="24.0" prefWidth="91.0" text="Ocupacion">
+         <effect>
+            <DropShadow color="#0500ff" />
+         </effect></Label>
+      <TextField fx:id="txtOcupacion" editable="false" layoutX="96.0" layoutY="204.0" prefHeight="25.0" prefWidth="255.0" />
+      <ImageView fitHeight="135.0" fitWidth="133.0" layoutX="699.0" layoutY="21.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Paciente.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblPacientes" layoutY="243.0" prefHeight="279.0" prefWidth="850.0">
+        <columns>
+          <TableColumn fx:id="colCodigoPaciente" prefWidth="105.0" text="Codigo Paciente" />
+          <TableColumn fx:id="colDPI" prefWidth="94.0" text="DPI" />
+            <TableColumn fx:id="colNombres" prefWidth="104.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" minWidth="4.0" prefWidth="100.0" text="Apellidos" />
+            <TableColumn fx:id="colNacimiento" prefWidth="84.0" text="Nacimiento" />
+            <TableColumn fx:id="colEdad" minWidth="0.0" prefWidth="42.0" text="Edad" />
+            <TableColumn fx:id="colDireccion" prefWidth="124.0" text="Direccion" />
+            <TableColumn fx:id="colOcupacion" prefWidth="111.0" text="Ocupacion" />
+            <TableColumn fx:id="colSexo" prefWidth="85.0" text="Sexo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="38.0" layoutY="531.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+         <effect>
+            <InnerShadow color="#1b00ff" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="540.0" layoutY="531.0" mnemonicParsing="false" text="Editar">
+         <effect>
+            <InnerShadow color="#1100ff" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="254.0" layoutY="531.0" mnemonicParsing="false" text="Eliminar">
+         <effect>
+            <InnerShadow color="#0d00ff" />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="766.0" layoutY="531.0" mnemonicParsing="false" text="Reporte">
+         <effect>
+            <InnerShadow color="#0011ff" />
+         </effect>
+      </Button>
+      <TextField fx:id="txtFechaNacimiento" editable="false" layoutX="472.0" layoutY="123.0" prefHeight="25.0" prefWidth="219.0" />
+   </children>
+</AnchorPane>

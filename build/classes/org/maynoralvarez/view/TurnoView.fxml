@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.maynoralvarez.controller.TurnoController">
+   <children>
+      <Label layoutX="14.0" layoutY="23.0" prefHeight="22.0" prefWidth="78.0" text="Codigo Turno">
+         <effect>
+            <DropShadow color="#ff4000" />
+         </effect>
+      </Label>
+      <Label layoutX="14.0" layoutY="62.0" prefHeight="22.0" prefWidth="78.0" text="Fecha Turno">
+         <effect>
+            <DropShadow color="#ff4400" />
+         </effect>
+      </Label>
+      <Label layoutX="14.0" layoutY="103.0" prefHeight="22.0" prefWidth="78.0" text="Fecha Cita">
+         <effect>
+            <DropShadow color="#ff4400" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbCodigoTurno" layoutX="106.0" layoutY="22.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="146.0" text="Valor Cita">
+         <effect>
+            <DropShadow color="#ff4400" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtValorCita" editable="false" layoutX="107.0" layoutY="142.0" />
+      <Label layoutX="285.0" layoutY="26.0" text="Codigo Medico Especialidad">
+         <effect>
+            <DropShadow color="#ff4400" />
+         </effect>
+      </Label>
+      <Label layoutX="285.0" layoutY="65.0" text="Codigo Turno Responsable">
+         <effect>
+            <DropShadow color="#ff4400" />
+         </effect>
+      </Label>
+      <Label layoutX="285.0" layoutY="106.0" text="Codigo Paciente">
+         <effect>
+            <DropShadow color="#ff4400" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbCodigoMedicoEspecialidad" layoutX="450.0" layoutY="22.0" prefHeight="25.0" prefWidth="168.0" />
+      <ComboBox fx:id="cmbCodigoTurnoResponsable" layoutX="450.0" layoutY="61.0" prefHeight="25.0" prefWidth="168.0" />
+      <ComboBox fx:id="cmbCodigoPaciente" layoutX="450.0" layoutY="102.0" prefHeight="25.0" prefWidth="168.0" />
+      <TableView layoutX="-1.0" layoutY="185.0" prefHeight="300.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="colCodigoTurno" prefWidth="100.0" text="Codigo Turno" />
+          <TableColumn fx:id="colFechaTurno" prefWidth="110.0" text="Fecha Turno" />
+            <TableColumn fx:id="colFechaCita" prefWidth="95.0" text="Fecha Cita" />
+            <TableColumn fx:id="colValorCita" prefWidth="66.0" text="Valor Cita" />
+            <TableColumn fx:id="colCodigoMedicoEsp" prefWidth="135.0" text="Codigo Medico Esp." />
+            <TableColumn fx:id="colCodigoTurnoResp" prefWidth="136.0" text="Codigo Turno Resp." />
+            <TableColumn fx:id="colCodigoPaciente" prefWidth="127.0" text="Codigo Paciente" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="40.0" layoutY="503.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+         <effect>
+            <InnerShadow color="#ff4400" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="471.0" layoutY="503.0" mnemonicParsing="false" text="Editar">
+         <effect>
+            <InnerShadow color="#ff4400" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="227.0" layoutY="503.0" mnemonicParsing="false" text="Eliminar">
+         <effect>
+            <InnerShadow color="#ff4400" />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="658.0" layoutY="503.0" mnemonicParsing="false" text="Reporte">
+         <effect>
+            <InnerShadow color="#ff4400" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="131.0" layoutX="627.0" layoutY="9.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/enfermera.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="394.0" layoutY="114.0" prefHeight="92.0" prefWidth="200.0" text="Turnos">
+         <font>
+            <Font name="Berlin Sans FB" size="64.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFechaCita" editable="false" layoutX="107.0" layoutY="102.0" />
+      <TextField fx:id="txtFechaTurno" editable="false" layoutX="107.0" layoutY="61.0" />
+   </children>
+</AnchorPane>

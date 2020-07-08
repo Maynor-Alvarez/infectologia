@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.maynoralvarez.controller.AreasController">
+   <children>
+      <Label layoutX="103.0" layoutY="4.0" text="Areas">
+         <font>
+            <Font name="Berlin Sans FB" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="52.0" text="Codigo Area">
+         <effect>
+            <DropShadow color="#fffa00" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbCodigoArea" layoutX="93.0" layoutY="48.0" prefWidth="150.0" />
+      <Label layoutX="15.0" layoutY="90.0" text="Nombre Area">
+         <effect>
+            <DropShadow color="#fffa00" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtNombreArea" layoutX="94.0" layoutY="86.0" />
+      <Button fx:id="btnNuevo" layoutX="17.0" layoutY="313.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+         <effect>
+            <InnerShadow color="#fffa00" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="84.0" layoutY="313.0" mnemonicParsing="false" text="Eliminar">
+         <effect>
+            <InnerShadow color="#fffa00" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="157.0" layoutY="313.0" mnemonicParsing="false" text="Editar">
+         <effect>
+            <InnerShadow color="#fffa00" />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="214.0" layoutY="313.0" mnemonicParsing="false" text="Reporte">
+         <effect>
+            <InnerShadow color="#fffa00" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="257.0" layoutY="4.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblAreas" layoutY="126.0" prefHeight="160.0" prefWidth="290.0">
+        <columns>
+          <TableColumn fx:id="colCodigoArea" prefWidth="105.0" text="Codigo Area" />
+          <TableColumn fx:id="colNombreArea" prefWidth="184.0" text="Nombre Area" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

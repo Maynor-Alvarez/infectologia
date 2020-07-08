@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.maynoralvarez.controller.CargosController">
+   <children>
+      <Label layoutX="94.0" layoutY="14.0" text="Cargos">
+         <font>
+            <Font name="Berlin Sans FB" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="66.0" text="Codigo Cargo">
+         <effect>
+            <DropShadow color="#ff00c3" />
+         </effect>
+      </Label>
+      <Label layoutX="14.0" layoutY="98.0" text="Nombre Cargo">
+         <effect>
+            <DropShadow color="#ff00c3" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbCodigoCargo" layoutX="108.0" layoutY="62.0" prefWidth="150.0" />
+      <TextField fx:id="txtNombreCargo" layoutX="109.0" layoutY="94.0" />
+      <TableView fx:id="tblCargo" layoutY="129.0" prefHeight="160.0" prefWidth="290.0">
+        <columns>
+          <TableColumn fx:id="colCodigoCargo" prefWidth="118.0" text="Codigo Cargo" />
+          <TableColumn fx:id="colNombreCargo" prefWidth="171.0" text="Nombre Cargo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="14.0" layoutY="311.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+         <effect>
+            <InnerShadow color="#ff00c3" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="88.0" layoutY="311.0" mnemonicParsing="false" text="Eliminar">
+         <effect>
+            <InnerShadow color="#ff00c3" />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="229.0" layoutY="311.0" mnemonicParsing="false" text="Editar">
+         <effect>
+            <InnerShadow color="#ff00c3" />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="160.0" layoutY="311.0" mnemonicParsing="false" text="Reporte">
+         <effect>
+            <InnerShadow color="#ff00c3" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="253.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
